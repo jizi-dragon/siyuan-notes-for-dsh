@@ -1,0 +1,40 @@
+{
+  "name": "siyuan-notes-for-dsh",
+  "version": "0.4.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jizi-dragon/siyuan-notes-for-dsh.git"
+  },
+  "type": "module",
+  "description": "Write into the whole SiYuan (思源笔记) notebook from DeepSeek Harness. Warns when SiYuan is not running and suggests a notebook to bind when none is chosen; the settings page only picks the target notebook.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/routes.test.mjs && node test/client.test.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ]
+}

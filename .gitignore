@@ -1,0 +1,16 @@
+# Dependencies (the plugin has no runtime dependencies; pnpm may still create this)
+node_modules/
+
+# Build / packaging output
+*.zip
+dist/
+_zipcheck/
+
+# Local state
+*.log
+.trash/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

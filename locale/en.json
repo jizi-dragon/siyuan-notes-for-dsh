@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "SiYuan Notes",
+    "description": "Create, append to, update and read documents in a local SiYuan (思源笔记) workspace. Once a target notebook is picked, the whole notebook is writable; when SiYuan is not running or no notebook is bound, the plugin says so and suggests one.",
+    "detail": "Talks to the local SiYuan kernel REST API. The API token is read at call time from the SiYuan workspace config (conf/conf.json), or from SIYUAN_TOKEN / auto-discovery, and never leaves the host. Tools: siyuan_notebooks, siyuan_doc_create, siyuan_doc_append, siyuan_block_update, siyuan_search, siyuan_doc_read. With a target notebook selected, documents can be created at any path inside it, and any document or block can be appended to or rewritten — there is no confined sub-folder. The Settings page (Settings → SiYuan Notes) configures exactly one thing: which notebook to write into; values live only in <DSH_HOME>/siyuan-notes/settings.json, apply immediately, and differ per device. If SiYuan is not running the page shows a startup banner (including the detected install path) plus a Re-check button; if no notebook is bound yet it ranks the open notebooks by recent writes, name and document count, and offers one-click binding. Deletion is intentionally not exposed."
+  }
+}

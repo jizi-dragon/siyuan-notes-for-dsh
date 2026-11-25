@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "思源笔记",
+    "description": "在本地思源（SiYuan）里新建文档、追加内容、修改块和读取文档：选定目标笔记本后，整本笔记本都可写入；思源没启动或还没选笔记本时会主动提示与推荐。",
+    "detail": "通过本地思源内核的 REST API 工作；API token 在每次调用时从思源工作区配置 conf/conf.json 读取（或用 SIYUAN_TOKEN / 自动发现），不会出现在任何输出里。提供六个工具：siyuan_notebooks、siyuan_doc_create、siyuan_doc_append、siyuan_block_update、siyuan_search、siyuan_doc_read。选定目标笔记本后，可在笔记本内任意路径新建文档、对任意文档追加、改写任意块，不限定子目录。设置页（设置 → 思源笔记）只配置这一件事：写哪个笔记本；保存值只落在本机 <DSH_HOME>/siyuan-notes/settings.json，改完立即生效，换设备各配各的。思源没运行时页面给出启动提示（含找到的安装路径）和「重新检测」按钮；还没绑定笔记本时按最近写入、名字、文档数推荐一本，可一键绑定。不提供删除，避免误删笔记。"
+  }
+}

@@ -1,0 +1,11 @@
+- insert:
+    - id: siyuan-notes
+      name: siyuan-notes-for-dsh
+      config:
+        # Deployment defaults. The Settings page ("设置 → 思源笔记") stores this
+        # device's target notebook in <DSH_HOME>/siyuan-notes/settings.json and
+        # wins over these values, so a shared install can leave `notebook` empty.
+        baseUrl: http://127.0.0.1:6806
+        tokenFile: D:/DDUP/jizi/conf/conf.json
+        notebook: ''
+        timeoutMs: 20000

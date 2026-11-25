@@ -1,0 +1,7 @@
+# Keep the repo POSIX-friendly: commit LF, check out per platform.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.zip binary
+*.exe binary
